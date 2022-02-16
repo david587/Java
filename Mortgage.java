@@ -20,7 +20,7 @@ public class Main {
 
         System.out.print("Period(Years):");
         byte Period = sc.nextByte();
-        int numberofpay =Period *12;
+        int numberofpay =Period *MONTHS;
 
         double Mortgage = (good*Math.pow(1+good,numberofpay))/ (Math.pow(1+good,numberofpay)-1);
         double Mortgage_final= Mortgage * Principal;
